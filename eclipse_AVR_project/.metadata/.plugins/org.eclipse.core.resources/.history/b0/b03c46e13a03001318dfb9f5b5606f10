@@ -1,0 +1,9 @@
+package tryscala
+
+class clstry {
+  def main (args: Array[String] )
+  {
+    
+  }
+
+}

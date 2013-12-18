@@ -1,0 +1,8 @@
+package tryscala
+
+object obtry {
+	  def main (args: Array[String] )
+  {
+    
+  }
+}

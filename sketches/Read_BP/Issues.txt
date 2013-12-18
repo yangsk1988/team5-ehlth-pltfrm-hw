@@ -1,0 +1,46 @@
+1. Why the reading of timeRead() always timeout?
+in Stream.cpp Stream::timeRead()
+c=read();
+if (c >=0) return c;
+
+Just did a test about it, I changed it into
+c=read();
+return c;
+
+it seems read() not return the right value. 
+
+ANS: The problem has been found: 
+It is in the function Stream::findUntil as well as the way we use it Serial.find((char *)Head,4);
+Because we change unsigned char* into char*, so the 0xC1 become negative, but c = timedRead() is still positive 0x000000C1. Therefore, the target never found.
+ 
+bool Stream::findUntil(char *target, size_t targetLen, char *terminator, size_t termLen)
+{
+  size_t index = 0;  // maximum target string length is 64k bytes!
+  size_t termIndex = 0;
+  int c;
+  
+  if( *target == 0)
+    return true;   // return true if target is a null string
+  while( (c = timedRead()) > 0){
+    
+    if(c != target[index])
+      index = 0; // reset index if any char does not match
+    
+    if( c == target[index]){// THE TARGET IS IN TYPE CHAR* 
+      /////Serial.print("found "); Serial.write(c); Serial.print("index now"); Serial.println(index+1);
+      if(++index >= targetLen){ // return true if all chars in the target match
+        return true;
+      }
+    }
+    
+    if(termLen > 0 && c == terminator[termIndex]){
+      if(++termIndex >= termLen)
+        return false;       // return false if terminate string found before target string
+    }
+    else
+      termIndex = 0;
+  }
+  return false;
+}
+
+Alternative solution to this issure: Don't use find(). use peek(int offset) to do the finding task.
