@@ -19,3 +19,9 @@ GNU maker	Custom	"C:\MyWorkspace$ArduinoProgramFolder$\hardware\tools\avr\utils\
 AVR Header	Custom	 Files "C:\MyWorkspace$ArduinoProgramFolder$\hardware\tools\avr\avr\include"
 AVRDude  	Custom	"C:\MyWorkspace$ArduinoProgramFolder$\hardware\tools\avr\bin"
 Atmel Part Description Files 	Custom	""
+
+
+
+2. Workspace
+The workspace path should be set as the folder:"eclipse_AVR_project". 
+if you set the folder in other place, you won't see the project we built before. 
