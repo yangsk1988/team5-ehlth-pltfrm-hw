@@ -1,0 +1,62 @@
+==========================================
+Measure number 2
+Date -> 19 of November of 2013 at 11:05
+Systolic value : 119 mmHg
+Diastolic value : 73 mmHg
+Pulse value : 60 bpm
+==========================================
+Measure number 3
+Date -> 19 of November of 2013 at 17:02
+Systolic value : 134 mmHg
+Diastolic value : 81 mmHg
+Pulse value : 79 bpm
+==========================================
+Measure number 4
+Date -> 21 of November of 2013 at 10:01
+Systolic value : 108 mmHg
+Diastolic value : 73 mmHg
+Pulse value : 63 bpm
+==========================================
+Measure number 5
+Date -> 21 of November of 2013 at 11:07
+Systolic value : 128 mmHg
+Diastolic value : 78 mmHg
+Pulse value : 69 bpm
+==========================================
+Measure number 6
+Date -> 21 of November of 2013 at 11:09
+Systolic value : 129 mmHg
+Diastolic value : 78 mmHg
+Pulse value : 71 bpm
+==========================================
+Measure number 7
+Date -> 27 of November of 2013 at 16:35
+Systolic value : 223 mmHg
+Diastolic value : 111 mmHg
+Pulse value : 90 bpm
+==========================================
+Measure number 8
+Date -> 27 of November of 2013 at 16:39
+Systolic value : 143 mmHg
+Diastolic value : 76 mmHg
+Pulse value : 91 bpm
+==========================================
+Measure number 9
+Date -> 27 of November of 2013 at 16:41
+Systolic value : 110 mmHg
+Diastolic value : 74 mmHg
+Pulse value : 73 bpm
+==========================================
+Measure number 10
+Date -> 2 of December of 2013 at 10:00
+Systolic value : 126 mmHg
+Diastolic value : 87 mmHg
+Pulse value : 83 bpm
+==========================================
+Measure number 11
+Date -> 2 of December of 2013 at 00:00
+Systolic value : 30 mmHg
+Diastolic value : 0 mmHg
+Pulse value : 0 bpm
+
+

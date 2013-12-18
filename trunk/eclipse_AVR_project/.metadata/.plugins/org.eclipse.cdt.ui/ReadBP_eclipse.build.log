@@ -1,0 +1,61 @@
+18:30:52 **** Incremental Build of configuration Debug for project ReadBP_eclipse ****
+make all 
+Building file: C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\cores\arduino" -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\variants\standard" -I"C:\MyWorkspace\Arduino_eclipse\ReadBP_eclipse" -I"C:\Users\Haitao Yang\Dropbox\Arduino\libraries\eHealth" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=105 -D_DEBUG -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"eHealth/eHealth.d" -MT"eHealth/eHealth.d"  -c -o "eHealth/eHealth.o" -x c++ "C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp"
+In file included from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/utils/i2c.h:6,
+                 from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:41:
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/utils/defs.h:84:1: warning: "PI" redefined
+In file included from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.h:36,
+                 from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:33:
+C:\MyWorkspace\ArduinoProgram\hardware\arduino\cores\arduino/Arduino.h:28:1: warning: this is the location of the previous definition
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp: In member function 'void eHealthClass::readBloodPressureSensor()':
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:135: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:137: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:171: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:200: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:204: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:231: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:234: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:236: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:251: warning: only initialized variables can be placed into program memory area
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:118: warning: unused variable 'Head'
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp: In member function 'float eHealthClass::getTemperature()':
+C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:290: warning: 'Temperature' may be used uninitialized in this function
+Finished building: C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp
+ 
+Building target: ReadBP_eclipse.elf
+Invoking: AVR C++ Linker
+avr-gcc -Os -Wl,--gc-sections  -L"C:\MyWorkspace\Arduino_eclipse\Arduino_Uno/Debug" -mmcu=atmega328p  -o"ReadBP_eclipse.elf"  ./eHealth/eHealth.o ./eHealth/eHealthDisplay.o  ./ReadBP_eclipse.o   -l"Arduino_Uno" -lm
+Finished building target: ReadBP_eclipse.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ReadBP_eclipse.elf  >"ReadBP_eclipse.lss"
+Finished building: ReadBP_eclipse.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex ReadBP_eclipse.elf  "ReadBP_eclipse.hex"
+Finished building: ReadBP_eclipse.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ReadBP_eclipse.elf  "ReadBP_eclipse.eep"
+Finished building: ReadBP_eclipse.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p ReadBP_eclipse.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:    6742 bytes (20.6% Full)
+(.text + .data + .bootloader)
+
+Data:       1604 bytes (78.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:30:54 Build Finished (took 2s.0ms)
+

@@ -1,0 +1,4 @@
+see video:
+http://www.youtube.com/watch?v=bmBrGRLOn98
+
+ 1. you don't need to copy jre to eclipse folder, you can set system environment variable instead - lots of tutorials available in the web. 2. make your life easier and use all power of the IDE, shortcuts, autocomplete etc. 3. those error are really annoying. you can include arduino core project created by the plugin : Project -> Properties then C/C++ general -> Paths and symbols -> Includes tab and in both C and C++ GNU paths you just add project from workspace. good luck!

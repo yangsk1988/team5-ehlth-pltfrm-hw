@@ -1,0 +1,8 @@
+package try3scala
+
+object obtry {
+	  def main (args: Array[String] )
+  {
+    print ("a")
+  }
+}

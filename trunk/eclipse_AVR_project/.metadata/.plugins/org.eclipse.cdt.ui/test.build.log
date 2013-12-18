@@ -1,0 +1,42 @@
+19:59:17 **** Build of configuration Release for project test ****
+make all 
+Building file: ../test.cpp
+Invoking: AVR C++ Compiler
+avr-g++ -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\cores\arduino" -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\variants\standard" -I"C:\MyWorkspace\Arduino_eclipse\test" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO= -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"test.d" -MT"test.d"  -c -o "test.o" -x c++ "../test.cpp"
+Finished building: ../test.cpp
+ 
+Building target: test.elf
+Invoking: AVR C++ Linker
+avr-gcc -Os -Wl,--gc-sections  -L"C:\MyWorkspace\Arduino_eclipse\Arduino_Uno/Release" -mmcu=atmega328p  -o"test.elf"  ./test.o   -l"Arduino_Uno" -lm
+Finished building target: test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S test.elf  >"test.lss"
+Finished building: test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -O ihex test.elf  "test.hex"
+Finished building: test.hex
+ 
+Create eeprom image (ihex format)
+avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex test.elf  "test.eep"
+Finished building: test.eep
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega328p test.elf
+AVR Memory Usage
+----------------
+Device: atmega328p
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:          9 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+19:59:18 Build Finished (took 845ms)
+

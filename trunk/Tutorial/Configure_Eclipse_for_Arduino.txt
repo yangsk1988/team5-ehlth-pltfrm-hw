@@ -1,0 +1,21 @@
+Default configuration for Arduino Uno Project
+1.Windows-> Perferences->Arduino
+
+a.Arduino
+Arduino IDE path ""
+Private Library path ""
+
+Check "Use Arduino IDE tools in eclipse"
+ 
+b.AVRDude
+1. "Use configuration file for AVRDude" is checked
+X:\Program Files\Arduino\hardware\tools\avr\etc\avrdude.conf
+
+c.Paths
+"Disable search for system paths at startup" is Checked.
+Path to     	Source	Current value
+AVR-GCC 	Custom	"C:\MyWorkspace\$ArduinoProgramFolder$\hardware\tools\avr\bin"
+GNU maker	Custom	"C:\MyWorkspace$ArduinoProgramFolder$\hardware\tools\avr\utils\bin"
+AVR Header	Custom	 Files "C:\MyWorkspace$ArduinoProgramFolder$\hardware\tools\avr\avr\include"
+AVRDude  	Custom	"C:\MyWorkspace$ArduinoProgramFolder$\hardware\tools\avr\bin"
+Atmel Part Description Files 	Custom	""
