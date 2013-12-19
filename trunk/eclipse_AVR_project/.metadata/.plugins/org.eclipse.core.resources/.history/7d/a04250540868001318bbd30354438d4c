@@ -115,7 +115,7 @@
 	{	
 		unsigned char _data;
 		unsigned char _buf[4];//1280=80entries * 16 bytes each
-		char Head[4] = {0xC1,0xC2,0xC3,0xC4};//const
+		unsigned char Head[4] = {0xC1,0xC2,0xC3,0xC4};//const
 		bool is_head_found = false;
 		//int ia=0;
 		BPlength=0;
@@ -143,8 +143,17 @@
 				Serial.print(" ");
 			}
 			return;*/
+
+			/*Serial.print(F("\nHead to find\n"));
+				for (int i = 0; i<4; i++){ // CheckSum 1, WHICH ARE "FF F0 F1 F2"
+					Serial.print(Head[i],HEX);
+					Serial.print(F(" "));
+				}
+			Serial.print(F("\n"));*/
 			
-			if(Serial.find(Head,4))
+
+			/** THE PROBLEM OF USING FIND() IS IT CAN NOT FIND THE STRING WE WANT.
+			if(Serial.find((char *)Head,4))
 			{
 				is_head_found = true;
 			}
@@ -153,9 +162,9 @@
 				is_head_found = false;
 				Serial.println(F("\nErrors: Can't find the head of data"));
 				return;
-			}
+			}*/
 
-			/*while(1){
+			while(1){
 				_data = Serial.read();
 #ifdef _DEBUG
 				Serial.print(_data,HEX);
@@ -190,11 +199,11 @@
 			{
 				Serial.println(F("\nErrors: Can't find the head of data"));
 				return;
-			}*/
+			}
 
 			Serial.print(F("\n"));
 
-			_data = Serial.peek(0);
+			_data = Serial.peek();
 			
  			while( Serial.available() && _data != 0xD1 && _data != 0xD4 && BPlength < BP_VECTOR_LEN) //&& _data != 0xFF  // "&& BPlength < BP_VECTOR_LEN(=80 now)" yht to prevent infinity loop
 			{				

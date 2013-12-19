@@ -1,7 +1,7 @@
 Arduino\ Board=Arduino Uno
 Arduino\ IDE\ Version=1.0.5
-Arduino\ Path=C\:\\MyWorkspace\\ArduinoProgram
+Arduino\ Path=C\:\\MyWorkspace_VerCtrl\\ArduinoProgram
 Arduino\ Port=COM7
-Private\ Library\ Path=C\:\\Users\\Haitao Yang\\Dropbox\\Arduino\\libraries
+Private\ Library\ Path=C\:\\MyWorkspace_VerCtrl\\libraries
 Use\ Arduino\ IDE\ Tools=true
 eclipse.preferences.version=1

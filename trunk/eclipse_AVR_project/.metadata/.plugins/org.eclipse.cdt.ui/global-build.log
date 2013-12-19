@@ -1,20 +1,5 @@
-18:30:50 **** Incremental Build of configuration Debug for project Arduino_Uno ****
+17:51:34 **** Incremental Build of configuration Debug for project Arduino_Uno ****
 make all 
-Building file: C:/MyWorkspace/ArduinoProgram/hardware/arduino/cores/arduino/Stream.cpp
-Invoking: AVR C++ Compiler
-avr-g++ -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\cores\arduino" -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\variants\standard" -DUSB_PID= -DUSB_VID= -DARDUINO=105 -D_DEBUG -Wall -Os -fno-exceptions -g  -ffunction-sections  -fdata-sections -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"arduino/Stream.d" -MT"arduino/Stream.d"  -c -o "arduino/Stream.o" "C:/MyWorkspace/ArduinoProgram/hardware/arduino/cores/arduino/Stream.cpp"
-Finished building: C:/MyWorkspace/ArduinoProgram/hardware/arduino/cores/arduino/Stream.cpp
- 
-Building target: libArduino_Uno.a
-Invoking: AVR Archiver
-avr-ar -r  "libArduino_Uno.a"  ./arduino/avr-libc/malloc.o ./arduino/avr-libc/realloc.o  ./arduino/CDC.o ./arduino/HID.o ./arduino/HardwareSerial.o ./arduino/IPAddress.o ./arduino/Print.o ./arduino/Stream.o ./arduino/Tone.o ./arduino/USBCore.o ./arduino/WInterrupts.o ./arduino/WMath.o ./arduino/WString.o ./arduino/main.o ./arduino/new.o ./arduino/wiring.o ./arduino/wiring_analog.o ./arduino/wiring_digital.o ./arduino/wiring_pulse.o ./arduino/wiring_shift.o  
-c:\MyWorkspace\ArduinoProgram\hardware\tools\avr\bin\avr-ar.exe: creating libArduino_Uno.a
-Finished building target: libArduino_Uno.a
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S libArduino_Uno.a  >"libArduino_Uno.lss"
-Finished building: libArduino_Uno.lss
- 
 Invoking: Print Size
 avr-size --format=avr --mcu=atmega328p libArduino_Uno.a
 AVR Memory Usage
@@ -239,61 +224,36 @@ Data:          0 bytes (0.0% Full)
 
 Finished building: sizedummy
  
-18:30:52 **** Incremental Build of configuration Debug for project ReadBP_eclipse ****
+17:51:35 **** Clean-only build of configuration Debug for project ReadBP_eclipse ****
+make clean 
+rm -rf  ./eHealth/eHealth.o ./eHealth/eHealthDisplay.o  ./ReadBP_eclipse.o  ReadBP_eclipse.eep  ReadBP_eclipse.hex  ReadBP_eclipse.lss  ./eHealth/eHealth.d ./eHealth/eHealthDisplay.d  ./ReadBP_eclipse.d  sizedummy  ReadBP_eclipse.elf
+ 
+17:51:36 **** Incremental Build of configuration Debug for project ReadBP_eclipse ****
 make all 
-Building file: C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp
+Building file: ../ReadBP_eclipse.cpp
 Invoking: AVR C++ Compiler
-avr-g++ -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\cores\arduino" -I"C:\MyWorkspace\ArduinoProgram\hardware\arduino\variants\standard" -I"C:\MyWorkspace\Arduino_eclipse\ReadBP_eclipse" -I"C:\Users\Haitao Yang\Dropbox\Arduino\libraries\eHealth" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=105 -D_DEBUG -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"eHealth/eHealth.d" -MT"eHealth/eHealth.d"  -c -o "eHealth/eHealth.o" -x c++ "C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp"
-In file included from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/utils/i2c.h:6,
-                 from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:41:
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/utils/defs.h:84:1: warning: "PI" redefined
-In file included from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.h:36,
-                 from C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:33:
-C:\MyWorkspace\ArduinoProgram\hardware\arduino\cores\arduino/Arduino.h:28:1: warning: this is the location of the previous definition
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp: In member function 'void eHealthClass::readBloodPressureSensor()':
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:135: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:137: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:171: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:200: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:204: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:231: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:234: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:236: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:251: warning: only initialized variables can be placed into program memory area
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:118: warning: unused variable 'Head'
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp: In member function 'float eHealthClass::getTemperature()':
-C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp:290: warning: 'Temperature' may be used uninitialized in this function
-Finished building: C:/Users/Haitao Yang/Dropbox/Arduino/libraries/eHealth/eHealth.cpp
+avr-g++ -I"C:\MyWorkspace_VerCtrl\ArduinoProgram\hardware\arduino\cores\arduino" -I"C:\MyWorkspace_VerCtrl\ArduinoProgram\hardware\arduino\variants\standard" -I"C:\MyWorkspace_VerCtrl\eclipse_AVR_project\ReadBP_eclipse" -I"C:\MyWorkspace_VerCtrl\libraries\eHealth" -D__IN_ECLIPSE__=1 -DUSB_VID= -DUSB_PID= -DARDUINO=105 -D_DEBUG -Wall -Os -ffunction-sections -fdata-sections -fno-exceptions -g -mmcu=atmega328p -DF_CPU=16000000UL -MMD -MP -MF"ReadBP_eclipse.d" -MT"ReadBP_eclipse.d"  -c -o "ReadBP_eclipse.o" -x c++ "../ReadBP_eclipse.cpp"
+../ReadBP_eclipse.cpp: In function 'void loop()':
+../ReadBP_eclipse.cpp:15: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:17: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:21: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:28: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:30: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:33: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:35: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:37: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:39: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:46: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:53: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:55: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:57: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:59: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:61: warning: only initialized variables can be placed into program memory area
+../ReadBP_eclipse.cpp:63: warning: only initialized variables can be placed into program memory area
+Finished building: ../ReadBP_eclipse.cpp
  
 Building target: ReadBP_eclipse.elf
 Invoking: AVR C++ Linker
-avr-gcc -Os -Wl,--gc-sections  -L"C:\MyWorkspace\Arduino_eclipse\Arduino_Uno/Debug" -mmcu=atmega328p  -o"ReadBP_eclipse.elf"  ./eHealth/eHealth.o ./eHealth/eHealthDisplay.o  ./ReadBP_eclipse.o   -l"Arduino_Uno" -lm
-Finished building target: ReadBP_eclipse.elf
- 
-Invoking: AVR Create Extended Listing
-avr-objdump -h -S ReadBP_eclipse.elf  >"ReadBP_eclipse.lss"
-Finished building: ReadBP_eclipse.lss
- 
-Create Flash image (ihex format)
-avr-objcopy -R .eeprom -O ihex ReadBP_eclipse.elf  "ReadBP_eclipse.hex"
-Finished building: ReadBP_eclipse.hex
- 
-Create eeprom image (ihex format)
-avr-objcopy -j .eeprom --no-change-warnings --change-section-lma .eeprom=0 -O ihex ReadBP_eclipse.elf  "ReadBP_eclipse.eep"
-Finished building: ReadBP_eclipse.eep
- 
-Invoking: Print Size
-avr-size --format=avr --mcu=atmega328p ReadBP_eclipse.elf
-AVR Memory Usage
-----------------
-Device: atmega328p
-
-Program:    6742 bytes (20.6% Full)
-(.text + .data + .bootloader)
-
-Data:       1604 bytes (78.3% Full)
-(.data + .bss + .noinit)
-
-
-Finished building: sizedummy
- 
+avr-gcc -Os -Wl,--gc-sections  -L"C:\MyWorkspace_VerCtrl\eclipse_AVR_project\Arduino_Uno/Debug" -mmcu=atmega328p  -o"ReadBP_eclipse.elf"  ./ReadBP_eclipse.o   -l"Arduino_Uno" -lm
+c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe: crtm328p.o: No such file: No such file or directory
+make: *** [ReadBP_eclipse.elf] Error 1

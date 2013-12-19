@@ -25,3 +25,8 @@ Atmel Part Description Files 	Custom	""
 2. Workspace
 The workspace path should be set as the folder:"eclipse_AVR_project". 
 if you set the folder in other place, you won't see the project we built before. 
+
+3.include path
+the include path in the "project->properties->c++ General-> Path and symbles" use whole path, not relative path. so you can not change the path to the work place. 
+
+
