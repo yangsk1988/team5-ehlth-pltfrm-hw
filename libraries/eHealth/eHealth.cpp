@@ -205,7 +205,7 @@
 
 			_data = Serial.peek();
 			
- 			while( Serial.available() && _data != 0xD1 && _data != 0xD4 && BPlength < BP_VECTOR_LEN) //&& _data != 0xFF  // "&& BPlength < BP_VECTOR_LEN(=80 now)" yht to prevent infinity loop
+ 			while( Serial.available() && _data < 0xD1 && _data > 0xD4 && BPlength < BP_VECTOR_LEN) //&& _data != 0xFF  // "&& BPlength < BP_VECTOR_LEN(=80 now)" yht to prevent infinity loop
 			{				
 				bloodPressureDataVector[BPlength].year = swap(Serial.read());
 				bloodPressureDataVector[BPlength].month = swap(Serial.read());

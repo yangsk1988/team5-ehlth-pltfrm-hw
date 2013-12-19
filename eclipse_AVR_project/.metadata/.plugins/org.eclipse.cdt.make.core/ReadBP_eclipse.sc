@@ -2,6 +2,11 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="it.baeyens.avreclipse.configuration.app.release.980545052;it.baeyens.avreclipse.configuration.app.release.980545052.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="c:\myworkspace_verctrl\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include"/>
+<includePath path="c:\myworkspace_verctrl\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include-fixed"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include-fixed"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../avr/include"/>
 <includePath path="c:\myworkspace\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include"/>
 <includePath path="c:\myworkspace\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include-fixed"/>
 <includePath path="c:/myworkspace/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include"/>
@@ -128,6 +133,11 @@
 </instance>
 <instance id="it.baeyens.avreclipse.configuration.app.release.980545052;it.baeyens.avreclipse.configuration.app.release.980545052.;it.baeyens.avreclipse.tool.cppcompiler.app.release.265767624;it.baeyens.avreclipse.cppcompiler.input.1732456011">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="c:\myworkspace_verctrl\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include"/>
+<includePath path="c:\myworkspace_verctrl\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include-fixed"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include-fixed"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../avr/include"/>
 <includePath path="c:\myworkspace\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include"/>
 <includePath path="c:\myworkspace\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include-fixed"/>
 <includePath path="c:/myworkspace/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include"/>
@@ -258,6 +268,11 @@
 </instance>
 <instance id="it.baeyens.avreclipse.configuration.app.release.980545052;it.baeyens.avreclipse.configuration.app.release.980545052.;it.baeyens.avreclipse.tool.compiler.winavr.app.release.1677379678;it.baeyens.avreclipse.compiler.winavr.input.472891441">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="c:\myworkspace_verctrl\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include"/>
+<includePath path="c:\myworkspace_verctrl\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include-fixed"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include-fixed"/>
+<includePath path="c:/myworkspace_verctrl/arduinoprogram/hardware/tools/avr/lib/gcc/../../avr/include"/>
 <includePath path="c:\myworkspace\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include"/>
 <includePath path="c:\myworkspace\arduinoprogram\hardware\tools\avr\bin\../lib/gcc/avr/4.3.2/include-fixed"/>
 <includePath path="c:/myworkspace/arduinoprogram/hardware/tools/avr/lib/gcc/../../lib/gcc/avr/4.3.2/include"/>

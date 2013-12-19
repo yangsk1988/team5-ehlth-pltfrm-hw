@@ -438,6 +438,21 @@ int HardwareSerial::peek(void)
   }
 }
 
+int HardwareSerial::peek(int offset)
+{
+  //assert(offset>=0);
+  if (_rx_buffer->head == _rx_buffer->tail) {
+    return -1;
+  }
+  else if (offset >= this->available() || offset < 0 )  {
+	  return -1;
+  }
+  else  {
+	//int index = (_rx_buffer->tail + offset) % SERIAL_BUFFER_SIZE;
+    return _rx_buffer->buffer[(_rx_buffer->tail + offset) % SERIAL_BUFFER_SIZE];
+  }
+}
+
 int HardwareSerial::read(void)
 {
   // if the head isn't ahead of the tail, we don't have any characters

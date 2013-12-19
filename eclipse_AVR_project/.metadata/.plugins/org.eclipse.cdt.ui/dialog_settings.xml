@@ -6,6 +6,11 @@
 	<section name="completion_proposal_size">
 	</section>
 	<section name="PDOMSearchPage">
+		<item value="227191" key="searchFlags"/>
+		<item value="false" key="caseSensitive"/>
+		<list key="previousPatterns">
+			<item value="asserth"/>
+		</list>
 	</section>
 	<section name="org.eclipse.cdt.ui.OPEN_ACTION_SELECTION_DIALOG_SECTION">
 		<item value="398" key="DIALOG_WIDTH"/>
