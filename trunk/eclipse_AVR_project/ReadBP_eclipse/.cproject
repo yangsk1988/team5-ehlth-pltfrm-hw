@@ -5,11 +5,11 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="it.baeyens.avreclipse.configuration.app.release.980545052" moduleId="org.eclipse.cdt.core.settings" name="Release">
 				<externalSettings/>
 				<extensions>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
@@ -31,9 +31,10 @@
 							<tool command="avr-gcc" commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" errorParsers="org.eclipse.cdt.core.GASErrorParser" id="it.baeyens.avreclipse.tool.assembler.winavr.app.release.2056035817" name="AVR Assembler" superClass="it.baeyens.avreclipse.tool.assembler.winavr.app.release">
 								<option id="it.baeyens.avreclipse.assembler.option.debug.level.22469911" name="Generate Debugging Info" superClass="it.baeyens.avreclipse.assembler.option.debug.level" value="it.baeyens.avreclipse.assembler.option.debug.level.none" valueType="enumerated"/>
 								<option id="it.baeyens.avreclipse.asm.option.include.paths.1193182990" name="#include paths for preprocessor(-I)" superClass="it.baeyens.avreclipse.asm.option.include.paths" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/Arduino_Uno/arduino}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/Arduino_Uno/standard}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/ReadBP_eclipse}&quot;"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/Arduino_Uno/arduino"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/Arduino_Uno/standard"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/ReadBP_eclipse"/>
+									<listOptionValue builtIn="false" value="C:/MyWorkspace/eclipse_AVR_project/ReadBP_eclipse/ReadBP_eclipse/eHealth"/>
 									<listOptionValue builtIn="false" value="../ReadBP_eclipse/eHealth"/>
 								</option>
 								<inputType id="it.baeyens.avreclipse.tool.assembler.input.237159600" superClass="it.baeyens.avreclipse.tool.assembler.input"/>
@@ -42,9 +43,10 @@
 								<option id="it.baeyens.avreclipse.compiler.option.debug.level.1349471076" name="Generate Debugging Info" superClass="it.baeyens.avreclipse.compiler.option.debug.level" value="it.baeyens.avreclipse.compiler.option.debug.level.none" valueType="enumerated"/>
 								<option id="it.baeyens.avreclipse.compiler.option.optimize.1229451333" name="Optimization Level" superClass="it.baeyens.avreclipse.compiler.option.optimize" value="it.baeyens.avreclipse.compiler.optimize.size" valueType="enumerated"/>
 								<option id="it.baeyens.avreclipse.compiler.option.incpath.83382774" name="Include Paths (-I)" superClass="it.baeyens.avreclipse.compiler.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/Arduino_Uno/arduino}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/Arduino_Uno/standard}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/ReadBP_eclipse}&quot;"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/Arduino_Uno/arduino"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/Arduino_Uno/standard"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/ReadBP_eclipse"/>
+									<listOptionValue builtIn="false" value="C:/MyWorkspace/eclipse_AVR_project/ReadBP_eclipse/ReadBP_eclipse/eHealth"/>
 									<listOptionValue builtIn="false" value="../ReadBP_eclipse/eHealth"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/eHealth}&quot;"/>
 								</option>
@@ -66,9 +68,10 @@
 								<option id="it.baeyens.avreclipse.cppcompiler.option.debug.level.1244205041" name="Generate Debugging Info" superClass="it.baeyens.avreclipse.cppcompiler.option.debug.level" value="it.baeyens.avreclipse.cppcompiler.option.debug.level.none" valueType="enumerated"/>
 								<option id="it.baeyens.avreclipse.cppcompiler.option.optimize.718166427" name="Optimization Level" superClass="it.baeyens.avreclipse.cppcompiler.option.optimize" value="it.baeyens.avreclipse.cppcompiler.optimize.size" valueType="enumerated"/>
 								<option id="it.baeyens.avreclipse.cppcompiler.option.incpath.404803734" name="Include Paths (-I)" superClass="it.baeyens.avreclipse.cppcompiler.option.incpath" valueType="includePath">
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/Arduino_Uno/arduino}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/Arduino_Uno/standard}&quot;"/>
-									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/ReadBP_eclipse}&quot;"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/Arduino_Uno/arduino"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/Arduino_Uno/standard"/>
+									<listOptionValue builtIn="false" value="../ReadBP_eclipse/ReadBP_eclipse"/>
+									<listOptionValue builtIn="false" value="C:/MyWorkspace/eclipse_AVR_project/ReadBP_eclipse/ReadBP_eclipse/eHealth"/>
 									<listOptionValue builtIn="false" value="../ReadBP_eclipse/eHealth"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/ReadBP_eclipse/eHealth}&quot;"/>
 								</option>
@@ -88,7 +91,7 @@
 							</tool>
 							<tool id="it.baeyens.avreclipse.tool.linker.winavr.app.release.1782124606" name="AVR C Linker" superClass="it.baeyens.avreclipse.tool.linker.winavr.app.release"/>
 							<tool command="avr-gcc" commandLinePattern="${COMMAND} -Os -Wl,--gc-sections  ${FLAGS} ${ARDUINO_LINK_OPTIONS} ${OUTPUT_FLAG}${OUTPUT_PREFIX}${OUTPUT} ${INPUTS} -lm" errorParsers="org.eclipse.cdt.core.GLDErrorParser" id="it.baeyens.avreclipse.tool.cpplinker.app.release.1612619751" name="AVR C++ Linker" superClass="it.baeyens.avreclipse.tool.cpplinker.app.release">
-								<option id="it.baeyens.avreclipse.cpplinker.option.libs.1826873105" name="Libraries (-l)" superClass="it.baeyens.avreclipse.cpplinker.option.libs" valueType="libs"/>
+								<option id="it.baeyens.avreclipse.cpplinker.option.libs.1826873105" name="Libraries (-l)" superClass="it.baeyens.avreclipse.cpplinker.option.libs"/>
 								<option id="it.baeyens.avreclipse.cpplinker.option.libpath.564686622" name="Libraries Path (-L)" superClass="it.baeyens.avreclipse.cpplinker.option.libpath" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ARDUINOBOARDNAME}}/${ConfigName}&quot;"/>
 								</option>
@@ -118,11 +121,11 @@
 			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="it.baeyens.avreclipse.configuration.app.release.980545052.435585594" moduleId="org.eclipse.cdt.core.settings" name="Debug">
 				<externalSettings/>
 				<extensions>
-					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.MakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
 					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
