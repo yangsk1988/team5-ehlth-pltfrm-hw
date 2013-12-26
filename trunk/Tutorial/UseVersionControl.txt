@@ -3,6 +3,9 @@
 e.g. the whole "Java" folder.
 Once you have java runtime environment installed, and set the right environment parameter. The Arduino IDE will launch Java in your system instead.
 
+others: Debug, Release. 
+I tired to not include ".metadata", but not sure if there is any problem. 
+
 
 2. Don't try to put Eclipse Workspace folder into dropbox. 
 Eclipse sometime get crazy, it first move project folder out of the folder "Dropbox\MyWorkspace\" and copy to "C:\Workspace"(may be this is the default directory!). Then after you close eclipse, files in "Dropbox\MyWorkspace\" come back. So I suggest not doing that to prevent any problem. 
